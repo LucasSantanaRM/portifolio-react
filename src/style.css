@@ -744,23 +744,23 @@ button:focus {
 }
 
 
-.home-main.svg {
-  position: relative;
-  animation: float 2s infinite;
-}
-
 @keyframes float {
-  0.5% {
-    transform: translate(0, 0);
+  0% {
+    transform: translateY(0);
   }
-  0.9% {
-    transform: translate(0, 50px);
+  50% {
+    transform: translateY(-10px);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateY(0);
   }
-  
 }
+
+.img-fluidd {
+  position: relative;
+  animation: float 5s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
 
 
 

@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import veeam from "../../Assets/Projects/veeam.png";
 import zabbix from "../../Assets/Projects/zabbix.png";
 import IA from "../../Assets/Projects/IA.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import grafana from "../../Assets/Projects/grafana.png";
 import wiki from "../../Assets/Projects/wiki.png";
 
 function Projects() {
@@ -28,6 +28,7 @@ function Projects() {
               title="IA Auto Hospedada"
               description="Uma IA instalada localmente usando o modelo LlAMA3 da meta,com ela temos possibilidades de criar os proprios agentes de IA para chatbots"
               demoLink="https://neural.lmsantana.com.br"
+              ghLink="https://openwebui.com/"
             />
           </Col>
 
@@ -45,28 +46,28 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={zabbix}
-              isBlog={false}
+              isBlog={true}
               title="Zabbix"
               description="Implementação do software de monitoramento de rede zabbix  em 3 camadas + proxy para melhor desempenho do serviço"
-                            
+              ghLink="https://blog.lmsantana.com.br/"           
             />
 
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
+              imgPath={grafana}
+              isBlog={true}
               title="Grafana"
               description="Instalação e configuração do software grafana para analise de dados"
-              ghLink="https://grafana.com"
+              ghLink="https://blog.lmsantana.com.br/"
               // demoLink="https://www." <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={veeam}
               isBlog={false}
               title="Instalação e configuração do software Veeam para Backup de infra-estrutura de datacenters"
               description="Implementação de um sistema de backup usado internamente para proteger a infra estrutura de servidores com Vmware"

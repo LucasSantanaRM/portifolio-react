@@ -20,7 +20,7 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        {/* Se o componente contiver um link de demonstração e não for um blog, ele renderizará o componente abaixo  */}
 
         {!props.isBlog && props.demoLink && (
           <Button
