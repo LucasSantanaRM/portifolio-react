@@ -8,7 +8,7 @@ import zabbix from "../../Assets/Projects/zabbix.png";
 import IA from "../../Assets/Projects/IA.png";
 import grafana from "../../Assets/Projects/grafana.png";
 import wiki from "../../Assets/Projects/wiki.png";
-
+import technews from "../../Assets/Projects/technews.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -21,61 +21,71 @@ function Projects() {
         Aqui estão alguns projetos em que trabalhei recentemente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={IA}
-              isBlog={false}
-              title="IA Auto Hospedada"
-              description="Uma IA instalada localmente usando o modelo LlAMA3 da meta,com ela temos possibilidades de criar os proprios agentes de IA para chatbots"
-              demoLink="https://neural.lmsantana.com.br"
-              ghLink="https://openwebui.com/"
-            />
-          </Col>
+  <Col md={4} className="project-card">
+    <ProjectCard
+      imgPath={IA}
+      isBlog={false}
+      title="IA Auto Hospedada"
+      description="Uma IA instalada localmente usando o modelo LlAMA3 da meta,com ela temos possibilidades de criar os proprios agentes de IA para chatbots"
+      demoLink="https://neural.lmsantana.com.br"
+      ghLink="https://openwebui.com/"
+    />
+  </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={wiki}
-              isBlog={false}
-              title="Wiki empresarial"
-              description="Uma Wikipédia local implementada em docker container contendo varios tutoriais  para auxiliar os colaboradores da empresa"
-              ghLink="https://wiki.sistemtelecom.com.br"
-              
-            />
-          </Col>
+  <Col md={4} className="project-card">
+    <ProjectCard
+      imgPath={wiki}
+      isBlog={false}
+      title="Wiki empresarial"
+      description="Uma Wikipédia local implementada em docker container contendo varios tutoriais para auxiliar os colaboradores da empresa"
+      ghLink="https://wiki.sistemtelecom.com.br"
+    />
+  </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={zabbix}
-              isBlog={true}
-              title="Zabbix"
-              description="Implementação do software de monitoramento de rede zabbix  em 3 camadas + proxy para melhor desempenho do serviço"
-              ghLink="https://blog.lmsantana.com.br/"           
-            />
+  <Col md={4} className="project-card">
+    <ProjectCard
+      imgPath={zabbix}
+      isBlog={true}
+      title="Zabbix"
+      description="Implementação do software de monitoramento de rede zabbix em 3 camadas + proxy para melhor desempenho do serviço"
+      ghLink="https://blog.lmsantana.com.br/"
+    />
+  </Col>
 
-          </Col>
+  <Col md={4} className="project-card">
+    <ProjectCard
+      imgPath={grafana}
+      isBlog={true}
+      title="Grafana"
+      description="Instalação e configuração do software grafana para analise de dados"
+      ghLink="https://blog.lmsantana.com.br/"
+      // demoLink="https://www." <--------Please include a demo link here
+    />
+  </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={grafana}
-              isBlog={true}
-              title="Grafana"
-              description="Instalação e configuração do software grafana para analise de dados"
-              ghLink="https://blog.lmsantana.com.br/"
-              // demoLink="https://www." <--------Please include a demo link here
-            />
-          </Col>
+  <Col md={4} className="project-card">
+    <ProjectCard
+      imgPath={veeam}
+      isBlog={false}
+      title="Instalação e configuração do software Veeam para Backup de infra-estrutura de datacenters"
+      description="Implementação de um sistema de backup usado internamente para proteger a infra estrutura de servidores com Vmware"
+      ghLink="https://github.com/"
+      // demoLink="https:///" 
+    />
+  </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={veeam}
-              isBlog={false}
-              title="Instalação e configuração do software Veeam para Backup de infra-estrutura de datacenters"
-              description="Implementação de um sistema de backup usado internamente para proteger a infra estrutura de servidores com Vmware"
-              ghLink="https://github.com/"
-              // demoLink="https:///"      <--------Please include a demo link here 
-            />
-          </Col>
-        </Row>
+  <Col md={4} className="project-card">
+    <ProjectCard
+      imgPath={technews}
+      isBlog={false}
+      title="Tech News"
+      description="Sistema feito usando HTML,CSS,JS e node.js consultando a API da SERPER"
+      ghLink="https://blog.lmsantana.com.br/"
+      // demoLink="https://www." 
+    />
+  </Col>
+</Row>
+
       </Container>
     </Container>
   );

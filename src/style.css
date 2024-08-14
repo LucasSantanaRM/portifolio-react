@@ -457,6 +457,8 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  display: flex;
+  align-items: stretch !important;
 }
 
 .project-card-view {
@@ -466,6 +468,10 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
